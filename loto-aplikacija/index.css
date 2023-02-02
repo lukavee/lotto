@@ -1,0 +1,179 @@
+/*/////////////// GENERAL CSS ////////////////////////*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(/img/dsgn_23.jpg) center center/cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 4rem;
+}
+
+.container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  border: solid whitesmoke 4px;
+  height: 500px;
+}
+
+.choose-numbers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+  flex: 1;
+}
+
+.choose-numbers-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.draw-numbers-container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.draw-numbers-container h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.ball {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+  color: #efefef;
+  font-weight: bold;
+  text-align: center;
+  background-color: royalblue;
+  letter-spacing: normal;
+}
+
+.invisible {
+  display: none;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+  letter-spacing: 5px;
+}
+
+.buttons-container .startBtn {
+  padding: 20px 40px;
+  border: solid white 3px;
+  color: white;
+  font-size: 1.7rem;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.buttons-container .startBtn:hover {
+  background-color: green;
+}
+
+.buttons-container .restartBtn {
+  padding: 20px 40px;
+  border: solid white 3px;
+  color: white;
+  font-size: 1.7rem;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.buttons-container .restartBtn:hover {
+  background-color: red;
+}
+
+/* JavaScript classes */
+
+.board {
+  position: relative;
+  background-color: #fffcff;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #cb0f31;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px;
+}
+
+.boardEl {
+  background-color: #fffcff;
+  width: 28px;
+  height: 28px;
+  color: #cb0f31;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  border: #cb0f31 solid 1px;
+}
+
+span {
+  display: flex;
+
+  width: 50px;
+  height: 50px;
+  font-size: 1.7rem;
+  background: linear-gradient(to right, green, white);
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-title {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  padding-bottom: 30px;
+}
+
+.show-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #353535;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
